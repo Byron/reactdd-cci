@@ -2,6 +2,8 @@
   "name": "reactdd-cci",
   "version": "0.1.0",
   "scripts": {
+    "test": "mocha --compilers js:babel-register --recursive",
+    "test:watch": "npm test -- --watch",
     "start": "DEBUG=true node server.js",
     "build": "webpack -p --config webpack.production.js",
     "build-dev": "webpack -p"
@@ -26,6 +28,8 @@
     "babel-preset-react": "^6.3.13",
     "babel-preset-react-hmre": "^1.0.0",
     "babel-preset-stage-0": "^6.3.13",
+    "babel-register": "^6.6.5",
+    "chai": "^3.5.0",
     "cross-env": "^1.0.6",
     "css-loader": "^0.23.1",
     "cssnext-loader": "^1.0.1",
@@ -35,6 +39,7 @@
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.13.4",
     "extract-text-webpack-plugin": "^1.0.1",
+    "mocha": "^2.4.5",
     "path": "^0.12.7",
     "react-addons-test-utils": "^0.14.7",
     "redux-mock-store": "0.0.6",
